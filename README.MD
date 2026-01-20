@@ -1,4 +1,4 @@
-#🧠 Desafio – Semana 1: Fundamentos
+## 🧠 Desafio – Semana 1: Fundamentos
 
 Nesta primeira semana, o foco será na **base da programação**: **sintaxe, lógica e boas práticas**.  
 Independentemente da linguagem escolhida, o objetivo é fortalecer os pilares que sustentam qualquer código sólido e bem estruturado.
