@@ -10,46 +10,34 @@ for contador in range(3):
   contador += 1 
 
 #Função para fazer a soma de todos os valores da lista
-def somar(lista):
-  soma = 0
-  for valor in lista:
-    soma += valor
-  
-  print("\n")
-  print(f"O valor total da soma da lista é {soma}\n")
+def operacoes(lista):
 
-#Função para tirar a média da lista -> Calculo - somar todos os valores da lista e dividir pela quantidade dela
-def media(lista):
-  soma = 0
-  for valor in lista:
-    soma += valor
-
-  media = soma / len(lista)
-  print(f"A média dos valores informados na lista é igual a {media}\n")
-
-#Função para descobrir o maior e menor número de duas maneiras
-def maior_menor(lista):
-  # print(F"O maior número da lista é {max(lista)}\n") forma simplificada de pegar o maior valor
-  # print(f"O menor número da lista é {min(lista)}") forma simplificada de pegar o maior valor
+#-----------------------------------------------------#
+#                AMBIENTE DE VARIÁVEIS                #
   max = float('-inf')
   min = float('inf')
+  soma = 0
+#-----------------------------------------------------#
 
-#Maior valor
-  for valor in lista:
+  for valor in lista: #LOPPING PRINCIPAL DA FUNÇÃO
+    soma += valor #Soma de itens da lista.
     valor = int(valor)
-    if valor > max:
-      max = valor
 
-#Menor valor
-  for valor in lista:
-    valor = int(valor)
-    if valor < min:
+    media = soma / len(lista) #Média da lista.
+
+    if valor > max: #Condição para verificar maior item da lista.
+     max = valor
+
+    if valor < min: #Condição para verificar o menor item da lista.
       min = valor
   
+#-----------------------------------------------------#
+#          AMBIENTE DA SAÍDA DE RESULTADOS            #
+  print("\n")
+  print(f"O valor total da soma da lista é {soma}\n")
+  print(f"A média dos valores informados na lista é igual a {media}\n")
   print(f"O maior valor da lista é: {max}\n")
   print(f"O menor valor da lista é: {min}")
-  
-#Chamando todas as funções para funcionar
-somar(lista)
-media(lista)
-maior_menor(lista)
+#-----------------------------------------------------#
+
+operacoes(lista)
